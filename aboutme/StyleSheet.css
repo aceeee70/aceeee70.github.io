@@ -9,13 +9,15 @@ h1 {
   font-size: 200%;
   border: 2px solid black;
  padding: 30px;
+
 }
 p,ul,ol {
   color: black;
   font-family: courier;
   font-size: 100%;
- 
+  width: 1150px;;
 }
+
 h2 {
   color: blue;
   font-family: verdana;
