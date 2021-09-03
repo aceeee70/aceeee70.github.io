@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign up Page</title>
+        <link href="./signup.css" rel="stylesheet"/>
+    </head>
+<body>
+    <form action="http://www.humanmetrics.com/cgi-win/JYype2.asp"  method="GET">
+            <fieldset id="container">
+                <legend class="legends">
+                New User Signup :
+                </legend>
+                
+                <div class="label">Name:</div> <div class="label"><input type="text" id="name"></div>
+                <div class="label">Gender:</div><div class="label"><input type="radio" id="gender" value="Male" >Male
+                    <input type="radio" id="gender" value="Female" checked>Female</div>
+                
+                    <div class="label">Age:</div><div class="label"><input type="text" id="age"></div>
+
+                    <div class="label">Personality type:</div><div class="label"><input type="text" id="type">(<label class="danger">Don't know your type ?</label>)</div>
+                <div class="label">Favorite OS: </div> <div class="label"><select id="fos">
+                    <option value="Windows">Windows</option>
+                    <option value="Linux">Linux</option>
+                    <option value="Ios">Mac Ios</option>
+                </select></div>
+                <div class="label"> Seeking age:</div><div class="label"><input type="text" id="min" placeholder="Min"> to <input type="text" id="max" placeholder="Max"> </div>
+           <input type="submit" id="signup" value="Sign Up">
+            </fieldset>  
+        </form>       
+</body>
+</html>

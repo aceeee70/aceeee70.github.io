@@ -1,0 +1,36 @@
+#container {
+    display: grid;
+    grid-template-columns: 120px 300px;
+    grid-gap: 5px;
+    max-width: 380px;
+    background-color: #DFDFFE;
+    border-radius: 10px;
+}
+.label{
+    padding: auto;
+}
+.legends{
+    border-style: solid;
+    background-color: white;
+    border-color: #E2E2E2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#type{
+    width: 25%;
+}
+#min{
+    width: 25%;
+}
+#max{
+    width: 25%;
+}
+#age{
+    width: 25%;
+}
+.danger{
+    color: red;
+    left: 10px;
+}
+#signup{
+    background-color: #FFAAAA;
+}
