@@ -11,7 +11,7 @@ body{
 .header-back{
     height: 50px;
     background-image: url('images/bannerbg.png');
-    width: -webkit-fill-available;	
+   	
 }
 .headerbox{
     display:flex;  
