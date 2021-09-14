@@ -1,34 +1,29 @@
-$(function() {
+$(function () {
+    "use strict";
+    $('#start').click(function () {
+        const $walls = $("#maze .boundary");
+        const $status = $('#status');
+        const $maze = $('#maze');
+        $walls.removeClass('youlose'); // reset walls
+        $status.text("Maze has begin! Find your way through");
 
-    let gameStarted = false;
+        $walls.mouseenter(function () {
+            $walls.addClass('youlose');
+        });
 
-    $(".boundary").mouseover(gameOver);
-    $("#maze").mouseleave(function() {
-        if (gameStarted) {
-            gameOver();
-        }
-    })
+        $maze.mouseleave(function () {
+            // if you leave the maze div, you lose!
+            $walls.addClass('youlose');
+        });
 
-    $("#start").click(function() {
-        gameStarted = true;
-        $(".boundary").removeClass("youlose");
-        $("#status").text("Game started!")
+        $('#end').mouseenter(function () {
+            if ($walls.hasClass('youlose')) {
+                $status.text("You lose :(");
+            } else {
+                $status.text("You win :)");
+            }
+            $walls.off('mouseenter');
+            $maze.off('mouseleave');
+        });
     });
-
-    $("#end").mouseenter(gameWin);
-
-    function gameOver() {
-        if (gameStarted) {
-            $(".boundary").addClass("youlose");
-            $("#status").text("You Lost :(");
-            gameStarted = false;
-        }
-    }
-
-    function gameWin() {
-        if (gameStarted) {
-            $("#status").text("You win! :)");
-            gameStarted = false;
-        }
-    }
 });
