@@ -1,0 +1,19 @@
+{
+  "name": "meangames",
+  "version": "1.0.0",
+  "description": "mean games page",
+  "main": "app03.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app03.js"
+  },
+  "keywords": [
+    "mean",
+    "express"
+  ],
+  "author": "asrat",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
